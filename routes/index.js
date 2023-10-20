@@ -18,4 +18,22 @@ router.get('/movies', (req, res, next) => {
 })
 
 
+
+//movie information page
+router.get('/movies/:id', (req, res, next) => {
+    const movieId = req.params.id;
+    
+    Movie.findById(movieId)
+    .then(movie => {
+        res.render('movie-info', {movie});
+    })
+    .catch(error => {
+        console.log('Something went wrong:', error);
+    });
+
+})
+
+
+
+
 module.exports = router;

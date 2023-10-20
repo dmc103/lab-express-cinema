@@ -6,13 +6,15 @@
     <title>List of Movies</title>
 </head>
 <body>
-    <h1>Available Movies</h1>
+    <h1 id="avail">Available Movies</h1>
 
-    <ul>
+    <ul id="movielist">
         {{#each movies}}
-        <li>
+        <li id="mlist">
             <h3>{{this.title}}</h3>
             <img src="{{this.image}}" alt="{{this.title}}">
+            <a href="/movies/{{this._id}}">See more</a>
+            <a href="/">Back to Home</a>
 
         </li>
 
@@ -22,3 +24,4 @@
     
 </body>
 </html>
+
