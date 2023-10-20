@@ -21,23 +21,48 @@ body::before {
 
 
 
-#welcome {
+#welcome , #movieinfo{
+  font: 54px "Lucida Grande", Helvetica, Arial, sans-serif;
   display: flex;
-  justify-content:end;
+  justify-content:center;
   align-items: center;
-  margin-top: 40%;
+  margin-top: 20%;
+  margin-left: 30%;
   color: rgb(191, 195, 198);
 }
 
-p, a{
+
+#movieinfo{
+  margin-top: 5%;
+}
+
+
+
+p, #check{
+  font: 20px "Lucida Grande", Helvetica, Arial, sans-serif;
   display: flex;
   justify-content: center;
   align-items: center;
   color: rgb(191, 195, 198);
+  margin-left: 30%;
 }
 
-a {
+#check {
+  font: 14px "Lucida Grande", Helvetica, Arial, sans-serif;
   color: #00B7FF;
+  justify-content: center;
+
+}
+
+
+
+a {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font: 14px "Lucida Grande", Helvetica, Arial, sans-serif;
+  color: #00B7FF;
+  justify-content: center;
 }
 
 
@@ -70,7 +95,43 @@ a {
 
 
 #mlist {
+  text-align: center;
   width: 25%;
   box-sizing: border-box;
   margin-bottom: 5%;
+}
+
+#minfo {
+  display: block;
+  margin: 0 60%;
+  max-width: 100%;
+  transform: scale(1.2);
+}
+
+ul {
+  color: antiquewhite;
+  list-style-type: none;
+  display:flex;
+  flex-wrap: wrap;
+}
+
+#stars{
+  margin-right: 5%;
+  margin-left: 49%;
+  font-size: medium;
+
+}
+
+#times li {
+  display:inline-block;
+  margin-right: 20px;
+  margin-left: 62%;
+  padding: 0;
+  font-size: medium;
+}
+
+
+
+#footer2 {
+  margin-bottom: 10%;
 }

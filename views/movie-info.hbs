@@ -6,20 +6,23 @@
     <title>{{movie.title}}</title>
 </head>
 <body>
-    <h1>{{movie.title}}</h1>
-    <img src="{{movie.image}}" alt="{{movie.title}} Picture">
+    <h1 id="movieinfo">{{movie.title}}</h1>
+    <img id="minfo" src="{{movie.image}}" alt="{{movie.title}} Picture">
     <p>Description: {{movie.description}}</p>
     <p>Directed by: {{movie.director}}</p>
+    
 
-    <ul>
+    <ul id="stars">
         {{#each movie.stars}}
         <li>
-            {{this}}
+            {{this}}{{#unless @last}}, {{/unless}}
         </li>
         {{/each}}
     </ul>
+    <br>
 
-    <ul>
+
+    <ul id="times">
         {{#each movie.showtimes}}
         <li>
             {{this}}
@@ -27,7 +30,7 @@
         </li>
         {{/each}}
     </ul>
-    <a href="/movies">Back to Movies List</a>
+    <a id="footer2" href="/movies">Back to Movies List</a>
     
 </body>
 </html>
